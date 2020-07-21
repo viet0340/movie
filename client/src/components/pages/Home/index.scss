@@ -1,0 +1,12 @@
+.home {
+  background-color: #000;
+  color: white;
+  padding-top: 150px;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 720px) {
+  .home {
+    padding-top: 100px;
+  }
+}

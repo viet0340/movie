@@ -1,0 +1,76 @@
+.controller {
+  .addMovie,
+  .delete {
+    padding: 6px 15px;
+    font-size: 16px;
+    background-color: rgb(202, 202, 202);
+  }
+
+  .deleteAll {
+    margin-left: 20px;
+  }
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  max-width: 1200px;
+  margin: 50px auto 0;
+}
+.movie__list {
+  table {
+    th,
+    td {
+      border: 1px solid rgb(116, 116, 116);
+      padding: 5px 8px;
+    }
+    thead {
+      .th_edit,
+      .th_delete {
+        width: 30px;
+      }
+      th:first-child {
+        width: 30px;
+      }
+      .th_title {
+        width: 400px;
+      }
+      .th_duration {
+        width: 100px;
+      }
+    }
+    tbody {
+      tr:nth-child(even) {
+        background-color: #dfdfdf;
+      }
+      tr:hover {
+        background-color: rgb(212, 212, 212);
+      }
+
+      label {
+        display: block;
+      }
+      .input {
+        text-align: center;
+      }
+      .edit {
+        width: 30px;
+        height: 30px;
+        border: none;
+        background-color: green;
+        color: white;
+      }
+      .delete {
+        width: 30px;
+        height: 30px;
+        border: none;
+        background-color: rgb(184, 0, 0);
+        color: white;
+      }
+    }
+    width: 100%;
+    border-collapse: collapse;
+  }
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.5;
+  margin-top: 20px;
+}

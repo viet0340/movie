@@ -1,0 +1,65 @@
+.movieBox {
+  &-title {
+    margin: 10px 0;
+    font-size: 16px;
+    color: white;
+    text-transform: capitalize;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &-img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+  &-evaluate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: #797979;
+    span {
+      color: rgb(219, 219, 0);
+
+      i {
+        font-size: 14px;
+        margin-right: 5px;
+      }
+    }
+  }
+  &-premium {
+    position: absolute;
+    z-index: 9;
+    left: 150px;
+    bottom: 0px;
+    color: yellow;
+  }
+  .card {
+    &-body {
+      padding: 20px 0;
+    }
+    background-color: transparent !important;
+  }
+  .slick-track {
+    margin: 0 !important;
+  }
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .movieBox {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .movieBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,45 @@
+.movieBoxSlide {
+  &-items {
+    padding: 0 10px !important;
+  }
+  &-title {
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &-img {
+    height: 250px;
+    object-fit: cover;
+  }
+  &-evaluate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: #797979;
+    span {
+      color: rgb(219, 219, 0);
+
+      i {
+        font-size: 14px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .card {
+    &-body {
+      padding: 20px 0;
+    }
+    background-color: transparent !important;
+  }
+  .slick-track {
+    margin: 0 !important;
+  }
+  margin: 20px 0 0;
+}

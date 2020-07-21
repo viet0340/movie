@@ -1,0 +1,22 @@
+.movie {
+  .pagination {
+    li {
+      width: 25px;
+      height: 25px;
+      border: 1px solid #fff;
+      text-align: center;
+      line-height: 21px;
+    }
+    li:hover {
+      cursor: pointer;
+    }
+    li.active {
+      color: #f74343;
+      font-weight: bold;
+    }
+    display: flex;
+    justify-content: flex-end;
+  }
+  max-width: 1140px;
+  margin: 0 auto;
+}

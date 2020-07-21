@@ -1,0 +1,65 @@
+.iframe {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .canner {
+    margin-top: 40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  iframe {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .iframe {
+    iframe {
+      height: 200px;
+    }
+    .canner {
+      margin-top: 40px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #fff;
+      line-height: 40px;
+      font-size: 20px;
+      text-align: center;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}

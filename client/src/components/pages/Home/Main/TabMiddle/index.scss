@@ -1,0 +1,38 @@
+.tabMiddle {
+  &_nav {
+    a {
+      color: white;
+      margin: 0 10px;
+      border: 1px solid transparent !important;
+      background-color: rgb(44, 44, 44);
+      border-radius: 10px !important;
+      -webkit-border-radius: 10px !important;
+      -moz-border-radius: 10px !important;
+      -ms-border-radius: 10px !important;
+      -o-border-radius: 10px !important;
+    }
+    a.active {
+      background-color: red !important;
+      font-weight: bold;
+      color: #fff !important;
+    }
+    border-color: rgb(75, 75, 75) !important;
+    padding-bottom: 20px;
+  }
+  .tab-content {
+    margin-top: 40px;
+  }
+
+  position: relative;
+  max-width: 1140px;
+  margin: auto;
+}
+
+@media screen and (max-width: 960px) {
+  .tabMiddle_nav {
+    justify-content: center;
+    a {
+      margin: 10px;
+    }
+  }
+}
